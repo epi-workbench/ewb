@@ -10,3 +10,5 @@
 ^news\.md$
 ^README\.qmd$
 ^README_files$
+^doc$
+^Meta$

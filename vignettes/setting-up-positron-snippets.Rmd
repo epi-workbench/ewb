@@ -1,0 +1,63 @@
+---
+title: "Setting up Positron Snippets"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{setting-up-positron-snippets}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ewb)
+```
+
+The `ewb` package includes snippet files for use in [Positron](https://positron.posit.co/):
+
+- `CSTs.code-snippets` — snippets for inserting CST code blocks into Quarto lessons
+- `hints.code-snippets` — snippets for inserting hint blocks into Quarto lessons
+
+## Step 1: Create a `.vscode` folder in your EWB course project
+
+In the root of your EWB course project, create a `.vscode/` folder if one does not already exist:
+
+```{r, eval = FALSE}
+dir.create(".vscode", showWarnings = FALSE)
+```
+
+## Step 2: Copy the snippet files into `.vscode/`
+
+Run the following code from your EWB course project in R to copy the snippet files into the `.vscode/` folder:
+
+```{r, eval = FALSE}
+file.copy(
+  from = system.file("extdata/snippets/CSTs.code-snippets", package = "ewb"),
+  to   = ".vscode/CSTs.code-snippets"
+)
+
+file.copy(
+  from = system.file("extdata/snippets/hints.code-snippets", package = "ewb"),
+  to   = ".vscode/hints.code-snippets"
+)
+```
+
+Positron automatically picks up any `.code-snippets` files in a project's `.vscode/` folder, so the snippets will be available immediately without any additional configuration. Because the files live inside the project, they are scoped to that project only and will not interfere with snippets in other projects.
+
+## Step 3: Use the snippets
+
+In any `.qmd` file, start typing one of the snippet prefixes and select it from the autocomplete menu:
+
+| Prefix | Inserts |
+|---|---|
+| `cst` or `solution` | A solution code block |
+| `cst` or `hidden` | A hidden code block |
+| `cst` or `test` | A test code block |
+| `cst` or `no modification` | A no-modification coding exercise |
+| `hint` | A hint block |
+| `hint no modification` | A no-modification hint block |

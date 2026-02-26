@@ -1,0 +1,107 @@
+// ============================================================================
+// EWB CST Snippets
+// created: 2026-02-03
+// last_updated: 2026-02-03
+// ============================================================================
+{
+	//-------------------------------------------------------------------------
+	// Insert individul code blocks
+	//-------------------------------------------------------------------------
+
+	// Insert a solution block into a Quarto lesson
+	"CST - Insert Solution Block ": {
+		"prefix": ["cst", "solution"],
+		"body": [
+			"```{r, type=solution}",
+			"#| label: solution_",
+			"",
+			"```",
+			"",
+		],
+		"description": "Insert a solution block into a Quarto lesson"
+	},
+
+	// Insert an hidden code block into a Quarto lesson
+	"CST - Insert Hidden Code Block": {
+		"prefix": ["cst", "hidden"],
+		"body": [
+			"```{r, type=hide}",
+			"#| label: hidden_",
+			"# Hidden Block for Local Testing Only",
+			"# -----------------------------------------------------------------------------",
+			"",
+			"# Setup the simulated learner environment",
+			"learner_env <- new.env()",
+			"rm(list = ls(envir = learner_env), envir = learner_env)",
+			"",
+			"# Simulated learner submissions",
+			"correct <- 'correct_learner_code'",
+			"wrong_01 <- 'incorrect_learner_code'",
+			"",
+			"# Set the active submission (swap this to test different learner attempts)",
+			"learner_code <- correct",
+			"",
+			"# Gracefully evaluate code (prevents early error from stopping tests)",
+			"try(eval(parse(text = learner_code), envir = learner_env), silent = TRUE)",
+			"```"
+		],
+		"description": "Insert an hidden code block into a Quarto lesson"
+	},
+
+	// Insert a test code block into a Quarto lesson
+	"CST - Insert Test Code Block": {
+		"prefix": ["cst", "test"],
+		"body": [
+			"```{r, type=test}",
+			"#| label: cst_",
+			"# Check that `____` was replaced with something",
+			"test_that(\"All blanks `____` were replaced.\", {",
+			"  expect_no_match(learner_code, \"__+\",  # Match one or more consecutive underscores (regex)",
+			"    info = \"It looks like your submission still contains `____`. Please replace `____` to complete the code.\"",
+			"  )",
+			"})",
+			"```"
+		],
+		"description": "Insert a test code block into a Quarto lesson"
+	},
+
+	//-------------------------------------------------------------------------
+	// Insert no modification blocks
+	//-------------------------------------------------------------------------
+
+	// Insert a no modification coding exercise into a Quarto lesson
+	"CST - No ": {
+		"prefix": ["cst", "no modification"],
+		"body": [
+			"${1:Type \"hidden\" to insert a hidden code block.}",
+			"",
+			"```{r, type=test}",
+			"#| label: cst_",
+			"# Check to make sure the code is submitted without modification",
+			"# Since the learner is only expected to click submit and not modify the",
+			"# scaffolded code, a single exact match test is sufficient.",
+			"test_that(\"Submit code without modification\", {",
+			"",
+			"  # Be mindful of invisible differences in whitespace when you paste code here.",
+			"  expected_code <- 'correct_learner_code'",
+			"",
+			"  expect_identical(",
+			"    trimws(learner_code),",
+			"    trimws(expected_code),",
+			"    info = paste0(",
+			"      \"This code block already contains the correct code.\\n\",",
+    		"      \"Please submit it without making any changes.\\n\",",
+    		"      \"If you accidentally modified the code, click the reset button (🔁) on \",",
+    		"      \"the toolbar to restore the original version.\\n\",",
+    		"      \"Want to experiment or try something different? Open the interactive \",",
+    		"      \"code console (</>) to explore safely without affecting your submission.\"",
+			"    )",
+			"  )",
+			"})",
+			"```",
+			"",
+			"${2:Type \"hint\" to insert a no modificagtion hint block.}",
+		],
+		"description": "Insert a no modification coding exercise into a Quarto lesson"
+	}
+}

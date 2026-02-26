@@ -20,5 +20,12 @@ pak::pak("epi-workbench/ewb")
 
 ## Template files
 
-The ewb package template files for things like creating coding
-lessons. The template files are located in `inst/templates`.
+The ewb package template files for things like creating coding lessons.
+The template files are located in `inst/templates`.
+
+## Positron snippets
+
+The ewb package includes code snippet files for use in Positron. See the
+[Setting up Positron
+Snippets](https://epi-workbench.github.io/ewb/articles/setting-up-positron-snippets.html)
+vignette for setup instructions.
