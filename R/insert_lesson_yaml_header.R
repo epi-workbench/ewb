@@ -5,7 +5,7 @@
 #'
 #' @family Insert Addins
 #'
-#' @references For more information on lesson types see: https://github.com/epi-workbench/EWBTemplates/wiki
+#' @references For more information on lesson types see: https://github.com/epi-workbench/ewb/wiki
 #'
 #' @return Invisibly returns the YAML header text as a single character
 #'   string.

@@ -29,7 +29,7 @@
 #' Run interactively via the RStudio Addins menu or call `insert_hidden_code_block()` in the console.
 #'
 #' @seealso
-#' [Writing CSTs wiki page](https://github.com/epi-workbench/EWBTemplates/wiki/Writing-CSTs)
+#' [Writing CSTs wiki page](https://github.com/epi-workbench/ewb/wiki/Writing-CSTs)
 #'
 #' @family Insert Addins
 #' @return Invisibly returns the inserted template text.

@@ -20,7 +20,7 @@ used for Epi-Workbench lessons at the current cursor location in RStudio.
 if (interactive()) insert_test_code_block()
 }
 \references{
-For more information on code blocks see: https://github.com/epi-workbench/EWBTemplates/wiki/Code-Blocks
+For more information on code blocks see: https://github.com/epi-workbench/ewb/wiki/Code-Blocks
 }
 \seealso{
 Other Insert Addins: 

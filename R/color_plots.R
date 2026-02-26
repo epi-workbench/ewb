@@ -1,7 +1,7 @@
 #' Plot Color Palettes
 #'
 #' @description This function helps visualize color palettes like the EWB brand
-#' standard color palette created in the `EWBTemplates` package.
+#' standard color palette created in the `ewb` package.
 #'
 #' @description
 #' This function expects to be passed a data frame containing color palette

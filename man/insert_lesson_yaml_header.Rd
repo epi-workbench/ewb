@@ -21,7 +21,7 @@ Epi-Workbench lessons at the current cursor location in RStudio.
 if (interactive()) insert_lesson_yaml_header()
 }
 \references{
-For more information on lesson types see: https://github.com/epi-workbench/EWBTemplates/wiki
+For more information on lesson types see: https://github.com/epi-workbench/ewb/wiki
 }
 \seealso{
 Other Insert Addins: 

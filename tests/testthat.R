@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(EWBTemplates)
+library(ewb)
 
-test_check("EWBTemplates")
+test_check("ewb")

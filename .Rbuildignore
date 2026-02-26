@@ -6,7 +6,7 @@
 ^LICENSE\.md$
 ^README\.Rmd$
 ^data-raw$
-^EWBTemplates\.Rproj$
+^ewb\.Rproj$
 ^news\.md$
 ^README\.qmd$
 ^README_files$

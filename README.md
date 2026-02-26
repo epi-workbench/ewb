@@ -15,10 +15,10 @@ You can install templates from GitHub with:
 
 ``` r
 # install.packages("pak")
-pak::pak("epi-workbench/EWBTemplates")
+pak::pak("epi-workbench/ewb")
 ```
 
 ## Template files
 
-The EWBTemplates package template files for things like creating coding
+The ewb package template files for things like creating coding
 lessons. The template files are located in `inst/templates`.

@@ -70,7 +70,7 @@ new_quarto_course_overview <- function(
   yml_text <- readLines(
     system.file(
       paste0("extdata/_extensions/", template_name, "/_extension.yml"),
-      package = "EWBTemplates"
+      package = "ewb"
     )
   )
 
@@ -93,7 +93,7 @@ new_quarto_course_overview <- function(
   # Copy template file from the templates package to the location specified
   # in file_loc
   file.copy(
-    from      = system.file(template_file_path, package = "EWBTemplates"),
+    from      = system.file(template_file_path, package = "ewb"),
     to        = file_name_path,
     overwrite = FALSE,
     copy.mode = TRUE

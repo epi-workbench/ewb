@@ -31,9 +31,9 @@
 #' Run interactively via the RStudio Addins menu or call `insert_coding_exercise()` in the console.
 #'
 #' @seealso
-#' [Code Blocks wiki page](https://github.com/epi-workbench/EWBTemplates/wiki/Code-Blocks)
-#' [Writing CSTs wiki page](https://github.com/epi-workbench/EWBTemplates/wiki/Writing-CSTs)
-#' [Hints wiki page](https://github.com/epi-workbench/EWBTemplates/wiki/Hints)
+#' [Code Blocks wiki page](https://github.com/epi-workbench/ewb/wiki/Code-Blocks)
+#' [Writing CSTs wiki page](https://github.com/epi-workbench/ewb/wiki/Writing-CSTs)
+#' [Hints wiki page](https://github.com/epi-workbench/ewb/wiki/Hints)
 #'
 #' @family Insert Addins
 #' @return Invisibly returns the inserted template text.

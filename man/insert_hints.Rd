@@ -30,7 +30,7 @@ Run interactively via the RStudio Addins menu or call \code{insert_hints()} in t
 if (interactive()) insert_hints()
 }
 \seealso{
-\href{https://github.com/epi-workbench/EWBTemplates/wiki/Hints}{Hints wiki page}
+\href{https://github.com/epi-workbench/ewb/wiki/Hints}{Hints wiki page}
 
 Other Insert Addins: 
 \code{\link{insert_coding_exercise}()},

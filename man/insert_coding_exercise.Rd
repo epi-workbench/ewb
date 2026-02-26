@@ -46,9 +46,9 @@ Run interactively via the RStudio Addins menu or call \code{insert_coding_exerci
 if (interactive()) insert_hints()
 }
 \seealso{
-\href{https://github.com/epi-workbench/EWBTemplates/wiki/Code-Blocks}{Code Blocks wiki page}
-\href{https://github.com/epi-workbench/EWBTemplates/wiki/Writing-CSTs}{Writing CSTs wiki page}
-\href{https://github.com/epi-workbench/EWBTemplates/wiki/Hints}{Hints wiki page}
+\href{https://github.com/epi-workbench/ewb/wiki/Code-Blocks}{Code Blocks wiki page}
+\href{https://github.com/epi-workbench/ewb/wiki/Writing-CSTs}{Writing CSTs wiki page}
+\href{https://github.com/epi-workbench/ewb/wiki/Hints}{Hints wiki page}
 
 Other Insert Addins: 
 \code{\link{insert_hidden_code_block}()},

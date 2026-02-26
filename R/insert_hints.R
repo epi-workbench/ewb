@@ -16,7 +16,7 @@
 #' Run interactively via the RStudio Addins menu or call `insert_hints()` in the console.
 #'
 #' @seealso
-#' [Hints wiki page](https://github.com/epi-workbench/EWBTemplates/wiki/Hints)
+#' [Hints wiki page](https://github.com/epi-workbench/ewb/wiki/Hints)
 #'
 #' @family Insert Addins
 #' @return Invisibly returns the inserted hint template text.

@@ -10,7 +10,7 @@ tags:
   - placeholder
 ---
 
-Make changes to the template file at: https://github.com/epi-workbench/EWBTemplates
+Make changes to the template file at: https://github.com/epi-workbench/ewb
 
 ```{r, type=initial}
 library(testthat)
@@ -24,7 +24,7 @@ library(dplyr, warn.conflicts = FALSE)
 
 # Data
 
-The [Working with External Data](https://github.com/epi-workbench/EWBTemplates/wiki/Working-with-External-Data) wiki page shows how to upload, share, and import datasets in Epi-Workbench lessons, making it easy for learners to explore real-world data right inside the platform.
+The [Working with External Data](https://github.com/epi-workbench/ewb/wiki/Working-with-External-Data) wiki page shows how to upload, share, and import datasets in Epi-Workbench lessons, making it easy for learners to explore real-world data right inside the platform.
 
 - [Click to download data.xls](Lesson File Uploder URL)
 
@@ -34,20 +34,20 @@ df <- read_csv("dataset_x.csv")
 
 # Images
 
-The [Images and Media](https://github.com/epi-workbench/EWBTemplates/wiki/Images-and-Media) wiki page walks through straightforward ways to add images and other media files to Epi‑Workbench lessons, bringing each topic to life for learners.
+The [Images and Media](https://github.com/epi-workbench/ewb/wiki/Images-and-Media) wiki page walks through straightforward ways to add images and other media files to Epi‑Workbench lessons, bringing each topic to life for learners.
 
 ![Descriptive alt‑text](https://dev.epi-workbench.com/instructor/download/media/<uuid>)
 
 # Call out boxes
 
 > [!note] Note - Installing Packages
-> The [Markdown and Callout Boxes](https://github.com/epi-workbench/EWBTemplates/wiki/Markdown-and-Callout-Boxes) wiki page contains more information about using callout boxes.
+> The [Markdown and Callout Boxes](https://github.com/epi-workbench/ewb/wiki/Markdown-and-Callout-Boxes) wiki page contains more information about using callout boxes.
 
 # Code blocks
 
-The [Code Blocks](https://github.com/epi-workbench/EWBTemplates/wiki/Code-Blocks) wiki page explains how to structure your lesson using specific markers and code block conventions. Following these instructions will ensure that our system correctly extracts tests, solutions, hidden code, initial code, and more.
+The [Code Blocks](https://github.com/epi-workbench/ewb/wiki/Code-Blocks) wiki page explains how to structure your lesson using specific markers and code block conventions. Following these instructions will ensure that our system correctly extracts tests, solutions, hidden code, initial code, and more.
 
-The [Writing Test Feedback](https://github.com/epi-workbench/EWBTemplates/wiki/Writing-Test-Feedback) wiki page is a reference for writing testthat tests for Epi-Workbench coding exercises.
+The [Writing Test Feedback](https://github.com/epi-workbench/ewb/wiki/Writing-Test-Feedback) wiki page is a reference for writing testthat tests for Epi-Workbench coding exercises.
 
 ```{r}
 # x <- 10
@@ -105,7 +105,7 @@ test_that("x is a numeric value", {
 })
 ```
 
-The [Hints](https://github.com/epi-workbench/EWBTemplates/wiki/Hints) wiki page distills best practices for crafting learner-friendly hints in Epi-Workbench coding exercises.
+The [Hints](https://github.com/epi-workbench/ewb/wiki/Hints) wiki page distills best practices for crafting learner-friendly hints in Epi-Workbench coding exercises.
 
 <!-- HINT:
 [POINTS=33]

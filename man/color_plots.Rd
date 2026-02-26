@@ -18,7 +18,7 @@ A ggplot2 plot.
 }
 \description{
 This function helps visualize color palettes like the EWB brand
-standard color palette created in the \code{EWBTemplates} package.
+standard color palette created in the \code{ewb} package.
 
 This function expects to be passed a data frame containing color palette
 information. It expects the data frame to have at least one row and at least

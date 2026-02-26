@@ -44,7 +44,7 @@ Run interactively via the RStudio Addins menu or call \code{insert_hidden_code_b
 if (interactive()) insert_hints()
 }
 \seealso{
-\href{https://github.com/epi-workbench/EWBTemplates/wiki/Writing-CSTs}{Writing CSTs wiki page}
+\href{https://github.com/epi-workbench/ewb/wiki/Writing-CSTs}{Writing CSTs wiki page}
 
 Other Insert Addins: 
 \code{\link{insert_coding_exercise}()},

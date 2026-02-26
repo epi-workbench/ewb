@@ -5,7 +5,7 @@
 #'
 #' @family Insert Addins
 #'
-#' @references For more information on code blocks see: https://github.com/epi-workbench/EWBTemplates/wiki/Code-Blocks
+#' @references For more information on code blocks see: https://github.com/epi-workbench/ewb/wiki/Code-Blocks
 #'
 #' @return Invisibly returns the code block text as a single character string.
 #' @export
