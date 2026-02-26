@@ -1,6 +1,6 @@
-# EWBTemplates 0.0.9010
+# ewb 0.0.9010
 
-- Updated all `test_that()` calls across EWBTemplates (including CST templates, helper functions, and internal tests) to use the explicit `desc =` argument.
+- Updated all `test_that()` calls across ewb (including CST templates, helper functions, and internal tests) to use the explicit `desc =` argument.
 
   - For example: `test_that(desc = "checks object creation", { ... })`
   
@@ -8,7 +8,7 @@
   
   - No functional changes to CST behavior or output.
 
-# EWBTemplates 0.0.9009
+# ewb 0.0.9009
 
 - Added the `insert_cst_blanks()` function.
 
@@ -16,7 +16,7 @@
   - The inserted test uses **testthat** to check whether any scaffolding blanks (`____`) remain in `learner_code`. If so, the test fails with a clear message; otherwise it succeeds.  
   - A companion helper, `cst_blanks_template()`, returns the template as a character string without inserting it, making it easier to write unit tests or reuse the template programmatically.
 
-# EWBTemplates 0.0.9008
+# ewb 0.0.9008
 
 - Add the `insert_coding_exercise()` function.
   - This RStudio Addin interactively inserts a complete exercise template into the active Quarto lesson at the current cursor location. The template includes:
@@ -34,7 +34,7 @@
   - We added a line for `expected_code` to the CST in the no modification code blocks template. This makes it easier to test submitted code that spans multiple lines.
   - The failure message in the in the no modification code blocks template is now spread across multiple lines to make it easier to read.
 
-# EWBTemplates 0.0.9007
+# ewb 0.0.9007
 
 - Update the `insert_hidden_code_block()` function.
 
@@ -52,7 +52,7 @@
     
   - Update `test_that()` descriptions. They should be concise statements of the CST's purpose. Guidance for learners will be provided in failure messages only.
 
-# EWBTemplates 0.0.9006
+# ewb 0.0.9006
 
 - Update the `insert_hidden_code_block()` function.
 
@@ -60,11 +60,11 @@
   
   - Add code for detaching packages during interactive testing to the hidden code block for loading packages template.
 
-# EWBTemplates 0.0.9005
+# ewb 0.0.9005
 
 - Added `convert_knitr_images()` function to convert R code blocks using `knitr::include_graphics()` into standard markdown image syntax (e.g., `![filename](link)`) for easier portability and readability in Quarto and markdown documents.
 
-# EWBTemplates 0.0.9004
+# ewb 0.0.9004
 
 - The `insert_hints()` function now has the ability to insert multiple different hint templates via the `templates` argument.
 
@@ -72,7 +72,7 @@
 
 - Updated `insert_hidden_code_block()` RStudio Addin to interactively insert templated CST code blocks into Quarto lessons. Includes support for "default", "no_mod", and "load_package" templates.
 
-# EWBTemplates 0.0.9003
+# ewb 0.0.9003
 
 - Update the example hint syntax.
 
@@ -114,11 +114,11 @@
   
   - insert_test_code_block.R
 
-# EWBTemplates 0.0.9002
+# ewb 0.0.9002
 
 - Update the code scaffolding inside of hidden code blocks.
 
-# EWBTemplates 0.0.9001
+# ewb 0.0.9001
 
 - Add RStudio add-ins for inserting YAML headers to EWB lesson files.
 
@@ -130,13 +130,13 @@
 
 - Add the Quarto Course Overview template used by `new_quarto_course_overview()`
 
-# EWBTemplates 0.0.9000
+# ewb 0.0.9000
 
-- This is the first committed version of the EWBTemplates package.
+- This is the first committed version of the ewb package.
 
 - This is a development version of the package and subject to major changes.
 
-- This version of the the EWBTemplates package will not be made available on
+- This version of the the ewb package will not be made available on
 CRAN.
 
 - This version contains:
@@ -148,5 +148,5 @@ CRAN.
   - A template for creating EWB coding lessons.
 
   - A convenience function, `color_plots()`, for visualizing color palettes
-  like the EWB brand standard color palette created in the `EWBTemplates`
+  like the EWB brand standard color palette created in the `ewb`
   package.

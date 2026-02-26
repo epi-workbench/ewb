@@ -1,5 +1,5 @@
-Package: EWBTemplates
-Title: Epi-Workbench Templates and Themes
+Package: ewb
+Title: Functions and Templates for Developing Epi-Workbench Content
 Version: 0.0.9010
 Authors@R: 
     person(given = "Brad",
@@ -28,3 +28,4 @@ Imports:
     shiny,
     rstudioapi (>= 0.14)
 Config/testthat/edition: 3
+VignetteBuilder: knitr

@@ -7,7 +7,7 @@
 
 <!-- badges: end -->
 
-Functions and templates for developing Epi-Workbench courses.
+Functions and templates for developing Epi-Workbench content.
 
 ## Installation
 
