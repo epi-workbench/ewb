@@ -1,0 +1,131 @@
+---
+title: "Add Lesson Title Here"
+author: "Your Name"
+date: "yyyy-mm-dd"
+date-modified: "yyyy-mm-dd"
+type: "Coding Exercise"
+category: "Programming Concepts"
+subcategory: "R Programming"
+tags:
+  - placeholder
+---
+
+Make changes to the template file at: https://github.com/epi-workbench/EWBTemplates
+
+```{r, type=initial}
+library(testthat)
+```
+
+# Load packages
+
+```{r}
+library(dplyr, warn.conflicts = FALSE)
+```
+
+# Data
+
+The [Working with External Data](https://github.com/epi-workbench/EWBTemplates/wiki/Working-with-External-Data) wiki page shows how to upload, share, and import datasets in Epi-Workbench lessons, making it easy for learners to explore real-world data right inside the platform.
+
+- [Click to download data.xls](Lesson File Uploder URL)
+
+```{r}
+df <- read_csv("dataset_x.csv")
+```
+
+# Images
+
+The [Images and Media](https://github.com/epi-workbench/EWBTemplates/wiki/Images-and-Media) wiki page walks through straightforward ways to add images and other media files to Epi‑Workbench lessons, bringing each topic to life for learners.
+
+![Descriptive alt‑text](https://dev.epi-workbench.com/instructor/download/media/<uuid>)
+
+# Call out boxes
+
+> [!note] Note - Installing Packages
+> The [Markdown and Callout Boxes](https://github.com/epi-workbench/EWBTemplates/wiki/Markdown-and-Callout-Boxes) wiki page contains more information about using callout boxes.
+
+# Code blocks
+
+The [Code Blocks](https://github.com/epi-workbench/EWBTemplates/wiki/Code-Blocks) wiki page explains how to structure your lesson using specific markers and code block conventions. Following these instructions will ensure that our system correctly extracts tests, solutions, hidden code, initial code, and more.
+
+The [Writing Test Feedback](https://github.com/epi-workbench/EWBTemplates/wiki/Writing-Test-Feedback) wiki page is a reference for writing testthat tests for Epi-Workbench coding exercises.
+
+```{r}
+# x <- 10
+x <- __
+```
+
+```{r, type=solution}
+# Solution Code Block
+x <- 10
+```
+
+```{r, type=hide}
+# Setup
+# Optionally, reset the environment.
+rm(list = ls(envir = student_env), envir = student_env)
+
+# Create a new environment to evaluate the student's code
+student_env <- new.env()
+
+# Example: simulate evaluating a student's submission
+# (Replace the string with actual code from student input)
+correct     <- "x <- 10" # Change this to test incorrect submissions
+wrong_name  <- "z <- 10" 
+wrong_value <- "x <- 11" 
+
+# Set the active submission here (change only this line to switch test cases)
+test_code <- correct
+
+# Evaluate the code in the isolated environment
+eval(parse(text = correct), envir = student_env)
+
+# Tests
+# 1 – Confirm x exists
+test_that("Object 'x' is created", {
+  expect_true(exists("x", envir = student_env))
+})
+
+# 2 – Confirm x is of the expected type and value
+test_that("x is a numeric value", {
+  expect_type(student_env$x, "double")
+  expect_equal(student_env$x, 10)  # optional: expected value
+})
+```
+
+```{r, type=test}
+# 1 – Confirm x exists
+test_that("Object 'x' is created", {
+  expect_true(exists("x", envir = student_env))
+})
+
+# 2 – Confirm x is of the expected type and value
+test_that("x is a numeric value", {
+  expect_type(student_env$x, "double")
+  expect_equal(student_env$x, 10)  # optional: expected value
+})
+```
+
+The [Hints](https://github.com/epi-workbench/EWBTemplates/wiki/Hints) wiki page distills best practices for crafting learner-friendly hints in Epi-Workbench coding exercises.
+
+<!-- HINT:
+[POINTS=33]
+Hints provide supportive nudges that guide learners toward the solution without giving away the answer.
+
+[TITLE=Here is a Title, POINTS=33]
+- Hint titles should be brief and written in title case.
+
+[TITLE=Solution, POINTS=100]
+- The final hint will be the solution. It should remove the remainder of the points.
+- x <- "hint"
+-->
+
+<!-- HINT:
+x <- 10
+-->
+
+# No Evaluation 
+
+```{r, type=noeval}
+
+```
+

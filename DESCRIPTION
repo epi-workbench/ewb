@@ -1,0 +1,30 @@
+Package: EWBTemplates
+Title: Epi-Workbench Templates and Themes
+Version: 0.0.9010
+Authors@R: 
+    person(given = "Brad",
+           family = "Cannell",
+           role = c("aut", "cre"),
+           email = "brad.cannell@epi-workbench.com")
+Description: Epi-Workbench templates and themes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    tibble,
+    vdiffr
+Depends: 
+    R (>= 2.10)
+Imports: 
+    dplyr,
+    ggplot2,
+    here,
+    miniUI,
+    shiny,
+    rstudioapi (>= 0.14)
+Config/testthat/edition: 3

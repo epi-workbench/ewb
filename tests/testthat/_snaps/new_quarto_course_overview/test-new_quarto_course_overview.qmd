@@ -1,0 +1,74 @@
+---
+title: "Enter the course title here. Max 100 characters including spaces."
+author: "Brad Cannell"
+date: "yyyy-mm-dd"
+date-modified: "yyyy-mm-dd"
+---
+
+<!--
+This is a template for authors developing new Epi-Workbench courses.
+Use it locally to draft and refine your course information before entering it in the online Course Creator.
+
+Add a course title to the YAML header above. The course title is written in title case and can have up to 100 characters including spaces. For example, "Introduction to the R Programming Language"
+-->
+
+# Overview
+
+<!-- 
+Enter a one-sentence course overview (max 100 characters).
+This is the short description displayed on the homepage and course card.
+-->
+
+Example: A high-level, beginner-friendly introduction to the R programming language.
+
+# Introduction
+
+<!-- 
+This is a more detailed, markdown-formatted introduction that explains the course to learners.
+Use this section to summarize what the course is about, why it’s important, and what learners can expect.
+-->
+
+<!-- Include the following subsections to help organize the course introduction. -->
+
+## What You’ll Learn
+
+<!-- 
+List the key learning objectives for the course.
+Use bullet points and begin each point with an action verb.
+-->
+
+- Example: Understand what R is and why it’s useful
+- Example: Write your first R program
+
+## Prerequisites
+
+<!-- 
+List any required or recommended prerequisites (courses, knowledge, skills).
+Include links to relevant Epi-Workbench content.
+-->
+
+- Recommended: Getting Started with Epi-Workbench
+
+## Related Epi-Workbench Content
+
+<!-- 
+List other courses or textbook chapters related to this topic.
+These can help reinforce or extend the material.
+-->
+
+## Optional Readings and References
+
+<!-- 
+List any helpful external resources or suggested readings.
+Use hyperlinks when appropriate.
+-->
+
+- [ModernDive](https://moderndive.com/)
+- [HOPR](https://rstudio-education.github.io/hopr/)
+
+# Metadata
+
+**Subcategory:**
+<!-- Example: R Programming -->
+
+**Course Language:** R <!-- Currently, only R is supported. Python will be supported soon. -->

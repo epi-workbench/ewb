@@ -1,0 +1,60 @@
+Name: Quarto - Coding Lesson
+Description: Create an EWB coding lesson as a Quarto file from a template.
+Binding: new_quarto_lesson_coding
+Interactive: false
+
+Name: Quarto - Lesson Overview
+Description: Create an EWB course overview template as a Quarto file.
+Binding: new_quarto_course_overview
+Interactive: false
+
+Name: Insert Lesson YAML Header
+Description: Insert the standard lesson YAML header into a Quarto file.
+Binding: insert_lesson_yaml_header
+Interactive: false
+
+Name: Insert Initial Code Block
+Description: Insert the standard initial code block template into a Quarto file.
+Binding: insert_initial_code_block
+Interactive: false
+
+Name: Insert Coding Exercise
+Description: Insert an exercise, solution, hidden, and test code block into a Quarto file.
+Binding: insert_coding_exercise
+Interactive: true
+
+Name: Insert Solution Code Block
+Description: Insert the standard solution code block template into a Quarto file.
+Binding: insert_solution_code_block
+Interactive: false
+
+Name: Insert Hidden Code Block
+Description: Insert the standard hidden code block template into a Quarto file.
+Binding: insert_hidden_code_block
+Interactive: true
+
+Name: Insert Test Code Block
+Description: Insert the standard test code block template into a Quarto file.
+Binding: insert_test_code_block
+Interactive: false
+
+Name: Insert Hints
+Description: Insert the standard code block hint template into a Quarto file.
+Binding: insert_hints
+Interactive: true
+
+Name: Insert No Evaluation Code Block
+Description: Insert the standard no evalution code block template into a Quarto file.
+Binding: insert_noeval_code_block
+Interactive: false
+
+Name: Insert CST
+Description: Interactively choose and insert a CST template at the cursor
+Binding: insert_cst
+Interactive: true
+
+Name: Insert CST - Blanks Replaced
+Description: Inserts a testthat block that checks for remaining ____ in learner_code.
+Binding: insert_cst_blanks
+Interactive: false
+

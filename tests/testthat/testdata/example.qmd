@@ -1,0 +1,53 @@
+---
+title: "Demonstrating knitr to Markdown Image Conversion"
+format: html
+---
+
+## Introduction
+
+This document contains examples of R code blocks that use `knitr::include_graphics()` to display images. The purpose is to demonstrate how the `convert_knitr_images()` function can automatically convert these code blocks into standard markdown image syntax.
+
+## Example: Code Block to Convert
+
+The following code block uses `knitr::include_graphics()` to render an image. When processed by the function, it will be replaced with markdown image syntax.
+
+```{r}
+#| label: fig-using-console
+#| echo: false
+#| fig-cap: Submitting R code in the console.
+
+knitr::include_graphics("my_image.png")
+```
+
+## Example: Code Block That Should Not Be Converted
+
+This block performs a typical R calculation and should remain unchanged.
+
+```{r}
+summary(mtcars)
+```
+
+## Expected Result
+
+After running the `convert_knitr_images()` function, the first code block should be replaced by:
+
+`![using_console.png](Replace with link)`
+
+This replacement keeps the image reference in the document while removing the R code block wrapper.
+
+## How to Use the Function
+
+To use the `convert_knitr_images()` function:
+
+1. Save your original Quarto or markdown file (e.g., `example.qmd`).
+
+2. Call the function in your R session as shown below:
+
+````
+# Replace inline image code blocks in 'example.qmd'
+convert_knitr_images("example.qmd", "example_converted.qmd")
+````
+
+3. Open `example_converted.qmd` to review the modified content.
+
+The converted document will contain standard markdown image syntax in place of any `knitr::include_graphics()` calls found within code blocks.
