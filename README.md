@@ -18,6 +18,15 @@ You can install templates from GitHub with:
 pak::pak("epi-workbench/ewb")
 ```
 
+## Instructions for use
+
+- See the [EWB Wiki](https://dev.epi-workbench.com/EPI-Wiki/) for
+  general guidance on creating and maintaining courses.
+
+- See the [`ewb` package
+  wiki](https://github.com/epi-workbench/ewb/wiki) for guidance on using
+  the `ewb` package.
+
 ## Template files
 
 The ewb package template files for things like creating coding lessons.
