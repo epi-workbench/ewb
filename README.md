@@ -26,6 +26,5 @@ The template files are located in `inst/templates`.
 ## Positron snippets
 
 The ewb package includes code snippet files for use in Positron. See the
-[Setting up Positron
-Snippets](https://epi-workbench.github.io/ewb/articles/setting-up-positron-snippets.html)
-vignette for setup instructions.
+Setting up Positron Snippets vignette for setup instructions
+(`vignette("setting-up-positron-snippets", package = "ewb")`).
