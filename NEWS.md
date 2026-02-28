@@ -1,3 +1,19 @@
+# ewb 0.0.9011
+
+- Added Positron snippet files (`CSTs.code-snippets` and `hints.code-snippets`) to `inst/extdata/snippets/`.
+
+  - Users can copy these files into their project's `.vscode/` folder to enable tab-completion for CSTs and hints in Positron.
+
+  - Added a new vignette (`vignette("setting-up-positron-snippets", package = "ewb")`) with step-by-step setup instructions.
+
+- Updated `convert_knitr_images()` to provide more informative feedback.
+
+  - The function now prints a message listing the number of converted blocks and the names of the affected image files.
+
+  - If no knitr image blocks are found, the function informs the user rather than silently completing.
+
+  - The function now invisibly returns the `output_file` path when writing to disk.
+
 # ewb 0.0.9010
 
 - Updated all `test_that()` calls across ewb (including CST templates, helper functions, and internal tests) to use the explicit `desc =` argument.

@@ -1,6 +1,6 @@
 Package: ewb
 Title: Functions and Templates for Developing Epi-Workbench Content
-Version: 0.0.9010
+Version: 0.0.9011
 Authors@R: 
     person(given = "Brad",
            family = "Cannell",

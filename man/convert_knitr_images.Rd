@@ -14,7 +14,9 @@ If \code{NULL}, the modified lines are returned as a character vector instead of
 }
 \value{
 If \code{output_file} is \code{NULL}, returns a character vector containing the modified file content.
-Otherwise, the function writes the modified content to the specified output file and returns nothing.
+Otherwise, the function writes the modified content to the specified output file and returns
+\code{output_file} invisibly, emitting a message listing the number of blocks converted and the
+image file names affected.
 }
 \description{
 This function reads a markdown or Quarto file and searches for R code blocks
