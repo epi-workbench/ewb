@@ -10,7 +10,9 @@
 #' If `NULL`, the modified lines are returned as a character vector instead of being written to disk.
 #'
 #' @return If `output_file` is `NULL`, returns a character vector containing the modified file content.
-#' Otherwise, the function writes the modified content to the specified output file and returns nothing.
+#' Otherwise, the function writes the modified content to the specified output file and returns
+#' `output_file` invisibly, emitting a message listing the number of blocks converted and the
+#' image file names affected.
 #'
 #' @examples
 #' \dontrun{
@@ -26,6 +28,7 @@ convert_knitr_images <- function(input_file, output_file = NULL) {
   output_lines <- character(0)
   in_code_block <- FALSE
   block_buffer <- character(0)
+  converted_images <- character(0)
 
   for (line in lines) {
     # Detect code block start
@@ -51,6 +54,7 @@ convert_knitr_images <- function(input_file, output_file = NULL) {
             image_file <- sub('.*\\(("|\')([^"\']+)("|\')\\).*', '\\2', match)
             image_md <- sprintf("![%s](Replace_with_link)", image_file)
             output_lines <- c(output_lines, image_md)
+            converted_images <- c(converted_images, image_file)
           }
         } else {
           output_lines <- c(output_lines, block_buffer)
@@ -69,6 +73,16 @@ convert_knitr_images <- function(input_file, output_file = NULL) {
   # Write to file or return
   if (!is.null(output_file)) {
     writeLines(output_lines, output_file)
+    if (length(converted_images) == 0) {
+      message("No knitr image blocks found; file unchanged.")
+    } else {
+      message(
+        length(converted_images), " knitr image block(s) converted in: ",
+        basename(output_file), "\n",
+        paste0("  - ", converted_images, collapse = "\n")
+      )
+    }
+    invisible(output_file)
   } else {
     return(output_lines)
   }
